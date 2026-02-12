@@ -12,42 +12,60 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #ffe5ec;
+            font-family: 'Pacifico', cursive, sans-serif; /* Fuente más romántica */
+            background: #ffc2d1; /* Rosa suave */
+            /* Esto crea corazones de fondo */
+            background-image: radial-gradient(#ff85a1 20%, transparent 20%),
+                              radial-gradient(#ff85a1 20%, transparent 20%);
+            background-position: 0 0, 50px 50px;
+            background-size: 100px 100px;
             text-align: center;
             overflow: hidden;
         }
 
-        h1 { color: #ff4d6d; font-size: 2rem; padding: 20px; }
+        h1 { 
+            color: #fb6f92; 
+            font-size: 2.5rem; 
+            text-shadow: 2px 2px white;
+            padding: 20px; 
+        }
 
         .container { position: relative; width: 100%; height: 300px; }
 
         button {
-            padding: 15px 30px;
-            font-size: 1.2rem;
+            padding: 15px 35px;
+            font-size: 1.3rem;
             border: none;
-            border-radius: 10px;
+            border-radius: 50px; /* Botones más redondeados */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             cursor: pointer;
-            transition: 0.2s;
+            transition: 0.3s;
             position: absolute;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
         }
 
         #btnSi {
-            background-color: #ff4d6d;
+            background-color: #ff477e;
             color: white;
             left: 50%;
             transform: translateX(-110%);
         }
 
         #btnNo {
-            background-color: #adb5bd;
+            background-color: #ff85a1;
             color: white;
             left: 50%;
             transform: translateX(10%);
         }
 
-        .victoria { display: none; }
-        .victoria img { width: 80%; border-radius: 15px; }
+        .victoria img { 
+            width: 90%; 
+            max-width: 400px;
+            border: 8px solid white; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
     </style>
 </head>
 <body>
